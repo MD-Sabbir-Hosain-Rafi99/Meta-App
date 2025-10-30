@@ -3,6 +3,7 @@ import RootLayout from "../layouts/RootLayout";
 import Features from "../pages/Features";
 import PrivacyAndSafty from "../pages/PrivacyAndSafty";
 import Registration from "../pages/Registration";
+import RegistrationLayout from "../layouts/RegistrationLayout";
 
 const router = createBrowserRouter([
     {
@@ -18,14 +19,20 @@ const router = createBrowserRouter([
                 element: <PrivacyAndSafty />,
             },
             {
-                path: "registration",
-                element: <Registration />
-            },
-            {
                 path: "*",
                 element: <h2>Error - 404</h2>,
             },
         ],
+    },
+    {
+        path: "registration",
+        element: <RegistrationLayout />,
+        children: [
+            {
+                index: true,
+                element: <Registration />
+            }
+        ]
     },
 ]);
 

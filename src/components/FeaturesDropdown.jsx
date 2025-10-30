@@ -20,15 +20,6 @@ const FeaturesDropdown = () => {
                                                         <span>→</span>
                                                     </button>
                                                 </div>
-                                                <div className="w-[500px] rounded-lg p-6 bg-white shadow-sm py-20">
-                                                    <h4 className="text-xl font-semibold mb-2">Useful</h4>
-                                                    <p className="text-sm text-slate-600 mb-3">
-                                                        Show up for your family and friends with everyday connection.
-                                                    </p>
-                                                    <button className="text-sm font-medium inline-flex items-center gap-2 text-sky-600">
-                                                        <span>→</span>
-                                                    </button>
-                                                </div>
                                             </div>
                                 </div>
                             </ul>
